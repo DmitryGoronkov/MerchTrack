@@ -103,16 +103,16 @@ a {
     &__label-wrap {
         @include side-margin;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         @media (min-width: 768px){
             width: 720px;
         }
-        @media (min-width: 1024px){
-            width: 664px;
-        }
-        @media (min-width: 1440px){
-            width: 1080px;
-        }
+        // @media (min-width: 1024px){
+        //     width: 664px;
+        // }
+        // @media (min-width: 1440px){
+        //     width: 1080px;
+        // }
     }
 
     &__label {
@@ -132,38 +132,47 @@ a {
     }
 
     &__label-item {
-        width: 200px;
-        margin-left: 4px;
+        width: 159px;
+        margin-left: 28px;
     }
 
     &__label-specifics {
-        width: 160px;
+        width: 127px;
     }
 }
+// .last{
+//     width: 126px;
+// }
+// .loc{
+//     width: 127px;
+// }
+// .qua{
+    
+// }
 
 .item {
     @include side-margin;
     border-bottom: solid 1px $mercury;
     margin-bottom: 1.5rem;
 
-    @include tablet {
+    @media (min-width: 48rem) {
         width: 720px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
     }
-    @media (min-width: 1024px){
-        width: 664px;
-    }
-    @media (min-width: 1440px){
-        width: 1080px;
-    }
-    @include desktop {
-        // width: 1024px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
+    // @media (min-width: 1024px){
+    //     width: 664px;
+    // }
+    // @media (min-width: 1440px){
+    //     width: 1080px;
+    // }
+    // @include desktop {
+    //     // width: 1024px;
+    //     display: flex;
+    //     justify-content: flex-start;
+    //     align-items: flex-start;
+    // }
 
     &__label-button-wrap {
         display: flex;

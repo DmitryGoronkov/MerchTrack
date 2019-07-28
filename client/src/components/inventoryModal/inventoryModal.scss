@@ -217,7 +217,7 @@
         width: 18rem;
         height: 3rem;
         padding: 0;
-        background-color: $instock-blue;
+        background-color: $backgr;
         border-radius: 4px;
         text-transform: uppercase;
         @include mobile-h2;
@@ -247,27 +247,28 @@
 
     &__buttonCancel {
         width: 18rem;
-        margin: 1.5rem 0;
+        // margin: 1.5rem 0;
         padding: 0;
+        height: 3rem;
         text-transform: uppercase;
         @include mobile-h2;
-        color: $instock-blue;
+        color: $black;
 
         @include tablet {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             margin: 0;
         }
 
         @include tablet-desktop {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             margin: 0;
         }
 
         @include desktop {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             margin: 0;
         }
     }
